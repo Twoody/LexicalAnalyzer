@@ -1,0 +1,27 @@
+README
+  CS:4908:004 (22C:196:004) Compiler Construction, D. W. Jones
+
+This directory contains software distributed to members of the
+class.  Most of it was developed (at least in part) during
+lecture presentations.  The files here are:
+
+
+config.h
+
+errors.h
+
+lexical.h
+
+stringpool.h
+
+symboltable.h
+
+errors.c
+
+lexical.h
+
+sets.h
+
+symboltable.c
+
+testlex.c

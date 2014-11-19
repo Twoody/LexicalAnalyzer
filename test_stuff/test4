@@ -1,0 +1,8 @@
+
+1 --Funny thing, if there is no context in a comment, then no return of IDENT
+2 --comment
+3 -- comment
+-- This test is working a little bit better now. And this isn't popping up anymore...
+
+
+

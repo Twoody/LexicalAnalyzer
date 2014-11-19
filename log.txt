@@ -1,0 +1,828 @@
+------------------------------------------------------------------------
+r660 | twoody | 2014-11-18 16:16:19 -0600 (Tue, 18 Nov 2014) | 1 line
+
+Rid this world of printf's and poorly placed quotes
+------------------------------------------------------------------------
+r659 | twoody | 2014-11-18 15:24:24 -0600 (Tue, 18 Nov 2014) | 1 line
+
+In case I missed anything. PROBLEM IS FIXED TOOvi lexical/src/lexical.cpp!
+------------------------------------------------------------------------
+r658 | twoody | 2014-11-18 15:15:55 -0600 (Tue, 18 Nov 2014) | 1 line
+
+Fied the problem. By adding onto string literal in lex.c, we forgot to ski into nextchar
+------------------------------------------------------------------------
+r657 | twoody | 2014-11-18 14:47:21 -0600 (Tue, 18 Nov 2014) | 1 line
+
+Narrowed down the test case to the one line only
+------------------------------------------------------------------------
+r656 | twoody | 2014-11-18 14:45:23 -0600 (Tue, 18 Nov 2014) | 1 line
+
+Changed up test1 in test_stuff to represent our error. Test1 is now a snippet of 'text' from stringpool.h (should look familiar to Cale). And despite the small size, we are crashing.
+------------------------------------------------------------------------
+r654 | twoody | 2014-11-17 23:22:18 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Lots of unanswered questions from tonight. Team discussion needs to be implemented!
+------------------------------------------------------------------------
+r653 | twoody | 2014-11-17 22:49:52 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Added another print statment for viewage of the bleh's
+------------------------------------------------------------------------
+r652 | twoody | 2014-11-17 21:47:53 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Added the print statement in the wrong method: suppose to be in string_append
+------------------------------------------------------------------------
+r651 | twoody | 2014-11-17 21:42:25 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Committing the print statement that is showing some weird behavior. Also, fixed the bug in symboltable.cpp. Finally, included a missing '}' in stringpool.h string_done
+------------------------------------------------------------------------
+r650 | twoody | 2014-11-17 21:15:51 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Added the ability for strings to contain string-literals (wasn't implemented before): this can be seen in __string__(). ALSO NOTICED A HUGE ERROR WITH STRINGPOOL! THIS IS BAD GUYS!
+------------------------------------------------------------------------
+r648 | twoody | 2014-11-17 14:04:36 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Going to add a method to return the actual character from the punct_type instead of just its index.
+------------------------------------------------------------------------
+r647 | twoody | 2014-11-17 13:55:48 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Adding a second test case to meet Mr. Becker's standards.
+------------------------------------------------------------------------
+r646 | twoody | 2014-11-17 13:16:52 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Some test progrs from Nick (aka member of Venture) that he is letting us run our lex on.
+------------------------------------------------------------------------
+r645 | twoody | 2014-11-17 12:53:30 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Forgot to add a test case
+------------------------------------------------------------------------
+r644 | twoody | 2014-11-17 12:21:38 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Forgot to add one of the testes last time; and will be ironing out a few minor glitches in lexical. Oddly enough, I realized that we actually need to use three layers of character holders for comment checking, but whatever. Maybe for next time we make a lex anal.
+------------------------------------------------------------------------
+r643 | twoody | 2014-11-17 00:14:41 -0600 (Mon, 17 Nov 2014) | 1 line
+
+Made another test case, and fixed the boolean case with __ident__
+------------------------------------------------------------------------
+r642 | twoody | 2014-11-16 23:23:26 -0600 (Sun, 16 Nov 2014) | 1 line
+
+I just made Punct, my punk. Time to make some more test cases and see what is spat out.
+------------------------------------------------------------------------
+r641 | cbierman | 2014-11-16 18:01:27 -0600 (Sun, 16 Nov 2014) | 1 line
+
+commenting out some functions where the helper functions aren't quite implemented yet
+------------------------------------------------------------------------
+r640 | cbierman | 2014-11-16 15:28:59 -0600 (Sun, 16 Nov 2014) | 1 line
+
+added some potentially useful helpers from class notes
+------------------------------------------------------------------------
+r639 | cbierman | 2014-11-16 15:26:05 -0600 (Sun, 16 Nov 2014) | 1 line
+
+fixed deletion of block (whoops)
+------------------------------------------------------------------------
+r638 | cbierman | 2014-11-16 15:17:31 -0600 (Sun, 16 Nov 2014) | 1 line
+
+more work on enumeration
+------------------------------------------------------------------------
+r637 | twoody | 2014-11-16 13:45:22 -0600 (Sun, 16 Nov 2014) | 1 line
+
+Lordy, Lordy! Someone stop me! The devil has consumed my soul and has shown me the ways of all of my errors! Oh Praise Turing! And cast Microsoft back to hell!
+------------------------------------------------------------------------
+r636 | twoody | 2014-11-16 13:21:02 -0600 (Sun, 16 Nov 2014) | 1 line
+
+Going to pick back up at six
+------------------------------------------------------------------------
+r635 | twoody | 2014-11-16 13:06:37 -0600 (Sun, 16 Nov 2014) | 1 line
+
+Extended number is on board. Still, the last thing to take care of is Punct.
+------------------------------------------------------------------------
+r634 | cbierman | 2014-11-16 11:45:42 -0600 (Sun, 16 Nov 2014) | 1 line
+
+adding parsing logic starting from the top
+------------------------------------------------------------------------
+r633 | cbierman | 2014-11-16 11:16:37 -0600 (Sun, 16 Nov 2014) | 1 line
+
+finished going through the kestrel grammar, now the real fun begins
+------------------------------------------------------------------------
+r632 | cbierman | 2014-11-16 11:11:55 -0600 (Sun, 16 Nov 2014) | 1 line
+
+more bare-bones for expressions
+------------------------------------------------------------------------
+r631 | cbierman | 2014-11-16 11:05:28 -0600 (Sun, 16 Nov 2014) | 1 line
+
+adding bare-bones for expressions
+------------------------------------------------------------------------
+r630 | cbierman | 2014-11-16 10:55:54 -0600 (Sun, 16 Nov 2014) | 1 line
+
+finshing up statements
+------------------------------------------------------------------------
+r629 | cbierman | 2014-11-16 10:50:13 -0600 (Sun, 16 Nov 2014) | 1 line
+
+getting to statements in parser
+------------------------------------------------------------------------
+r628 | cbierman | 2014-11-16 10:30:24 -0600 (Sun, 16 Nov 2014) | 1 line
+
+added more parse declarations to parser.cpp
+------------------------------------------------------------------------
+r626 | twoody | 2014-11-15 17:05:22 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Ran out of steam. Going to just look at a few other things instead of rattling my brain for specks of coal
+------------------------------------------------------------------------
+r625 | twoody | 2014-11-15 16:47:39 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Slight error with __identifier__ and making the error message work right; tried to fix, but am going to leave alone for now. Focusing on Punct
+------------------------------------------------------------------------
+r624 | twoody | 2014-11-15 16:10:04 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Last one to get on board is going to be PUNCT, because it's a punk.
+------------------------------------------------------------------------
+r623 | twoody | 2014-11-15 15:55:11 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Almost there, boys!
+------------------------------------------------------------------------
+r622 | twoody | 2014-11-15 15:29:26 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Strings and numbers appear to be on track. Comments seem to be on track. EOF seems to be on track. Punct and Ident now have to jump on board before this train leaves at six!
+------------------------------------------------------------------------
+r621 | twoody | 2014-11-15 14:18:38 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Starting to get the hang of this. Numbers are printing right, and they are only printing once. Moving from here to the other things to iron out the process in all of them.
+------------------------------------------------------------------------
+r620 | twoody | 2014-11-15 01:03:19 -0600 (Sat, 15 Nov 2014) | 1 line
+
+Still the double lexemes... This is leading me to believe there is something drastically wrong with our makefile.
+------------------------------------------------------------------------
+r619 | twoody | 2014-11-14 23:55:23 -0600 (Fri, 14 Nov 2014) | 1 line
+
+... Everything compiles. Now, there are errors! Is this a good thing, or bad thing?
+------------------------------------------------------------------------
+r616 | boswald | 2014-11-14 16:52:32 -0600 (Fri, 14 Nov 2014) | 1 line
+
+added extern to lexical.h
+------------------------------------------------------------------------
+r614 | twoody | 2014-11-14 16:04:12 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Missed Makefile?
+------------------------------------------------------------------------
+r613 | twoody | 2014-11-14 16:03:50 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Small problem with the header files somewhere; Going to try to solve tonight
+------------------------------------------------------------------------
+r612 | cbierman | 2014-11-14 15:33:11 -0600 (Fri, 14 Nov 2014) | 1 line
+
+more parse definitions
+------------------------------------------------------------------------
+r611 | cbierman | 2014-11-14 15:29:33 -0600 (Fri, 14 Nov 2014) | 1 line
+
+adding more parse definitions along with grammar
+------------------------------------------------------------------------
+r610 | cbierman | 2014-11-14 15:23:35 -0600 (Fri, 14 Nov 2014) | 1 line
+
+outlineo of parsing with grammars in comments
+------------------------------------------------------------------------
+r607 | twoody | 2014-11-14 14:22:58 -0600 (Fri, 14 Nov 2014) | 1 line
+
+We are getting there, gentlemen. Few more bugs to sweep under that rug, and done!
+------------------------------------------------------------------------
+r606 | twoody | 2014-11-14 13:52:49 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Most lex.cpp bugs sweeped out. Have to do some more sweeping now
+------------------------------------------------------------------------
+r605 | twoody | 2014-11-14 13:21:51 -0600 (Fri, 14 Nov 2014) | 1 line
+
+This is going to be my 100 commit. So excited! I will be finishing the debugging for this rendition of lex tonight!
+------------------------------------------------------------------------
+r604 | twoody | 2014-11-14 13:05:09 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Some reason I was getting an object file in place of lex.cpp; should be solved now
+------------------------------------------------------------------------
+r602 | twoody | 2014-11-14 03:23:16 -0600 (Fri, 14 Nov 2014) | 1 line
+
+In case I missed anything.
+------------------------------------------------------------------------
+r601 | twoody | 2014-11-14 01:35:14 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Running into weird errors from the overhaul. Just saving my work in case anyone gets on
+------------------------------------------------------------------------
+r600 | twoody | 2014-11-14 00:47:35 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Adding some of the new files
+------------------------------------------------------------------------
+r599 | twoody | 2014-11-14 00:42:47 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Removed all of the old files from working directory
+------------------------------------------------------------------------
+r598 | twoody | 2014-11-14 00:41:02 -0600 (Fri, 14 Nov 2014) | 1 line
+
+Added a directory of all of the old items. About to implement a new directory with all of the current items.
+------------------------------------------------------------------------
+r586 | boswald | 2014-11-12 13:05:01 -0600 (Wed, 12 Nov 2014) | 1 line
+
+changed flopLex() to assign by whole pointer, rather than assigning every attribute separately
+------------------------------------------------------------------------
+r585 | boswald | 2014-11-12 12:48:42 -0600 (Wed, 12 Nov 2014) | 1 line
+
+added header guards to symboltable and stringpool to eliminate error from multiple declarations.
+------------------------------------------------------------------------
+r584 | twoody | 2014-11-12 12:11:16 -0600 (Wed, 12 Nov 2014) | 1 line
+
+angry
+------------------------------------------------------------------------
+r583 | twoody | 2014-11-12 11:22:48 -0600 (Wed, 12 Nov 2014) | 1 line
+
+Did I find the bug?!
+------------------------------------------------------------------------
+r582 | twoody | 2014-11-11 15:43:08 -0600 (Tue, 11 Nov 2014) | 1 line
+
+Tried doing a lot of more weird things to number to just get that priting right. Seems like I did some realllllllly weird stuff to what is being returned, and the double printing is still being a problem...
+------------------------------------------------------------------------
+r581 | twoody | 2014-11-11 15:09:24 -0600 (Tue, 11 Nov 2014) | 1 line
+
+Working with just __number__() for right now, and a simple print statement that is called at the head of __number__(). It appears as if there is even more weird behaviour than previously thought...
+------------------------------------------------------------------------
+r580 | twoody | 2014-11-11 14:20:10 -0600 (Tue, 11 Nov 2014) | 1 line
+
+Looking at lexical still... Fixed some indentation to fit everything in a smaller screen. To change tab size in vi, be in the  prompt, and use  for best viewing
+------------------------------------------------------------------------
+r579 | twoody | 2014-11-11 13:19:15 -0600 (Tue, 11 Nov 2014) | 1 line
+
+Messing around with stringpool and fixed the endless running error. Make sure that you clean your local (i.e. rm lexical/obj/*.o) of any old testlex executable that is sitting around, before running, too.
+------------------------------------------------------------------------
+r578 | twoody | 2014-11-09 20:43:46 -0600 (Sun, 09 Nov 2014) | 1 line
+
+Idkwiadam
+------------------------------------------------------------------------
+r566 | twoody | 2014-11-07 17:48:10 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Still in the infinite loop. Going to mess around more with it after I get off of work
+------------------------------------------------------------------------
+r565 | twoody | 2014-11-07 08:56:47 -0600 (Fri, 07 Nov 2014) | 1 line
+
+One last commit before getting some sleep
+------------------------------------------------------------------------
+r564 | boswald | 2014-11-07 08:23:39 -0600 (Fri, 07 Nov 2014) | 1 line
+
+no more infinite loop :)
+------------------------------------------------------------------------
+r563 | twoody | 2014-11-07 08:15:00 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Weird issues are nowing going on with my files. I am hoping that this goes through
+------------------------------------------------------------------------
+r562 | twoody | 2014-11-07 07:26:12 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Fixing compiling bugs!
+------------------------------------------------------------------------
+r561 | twoody | 2014-11-07 07:15:40 -0600 (Fri, 07 Nov 2014) | 1 line
+
+So everyone can compile
+------------------------------------------------------------------------
+r560 | twoody | 2014-11-07 07:01:30 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Some changes I made at the lag didn't get converted over; fixing these now and trying a few new things
+------------------------------------------------------------------------
+r559 | twoody | 2014-11-07 06:36:57 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Added a print statement in testlex.c and lex_advance to help view what is going on
+------------------------------------------------------------------------
+r558 | twoody | 2014-11-07 02:21:10 -0600 (Fri, 07 Nov 2014) | 1 line
+
+Here is a little bit more lex.c that is back up and running; still double error though. Starting to think it has to do with lex_advance
+------------------------------------------------------------------------
+r557 | twoody | 2014-11-07 01:31:59 -0600 (Fri, 07 Nov 2014) | 1 line
+
+More working copies of lex.h and lex.c with the current revisions of 'flopping' the old and the new, in part with ch and nextCh
+------------------------------------------------------------------------
+r556 | twoody | 2014-11-06 22:06:45 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Added a working copy of lexical for any tests that need to be ran, while I debug it
+------------------------------------------------------------------------
+r555 | boswald | 2014-11-06 21:40:43 -0600 (Thu, 06 Nov 2014) | 1 line
+
+added keywords.h/c to be used for the initialization of the symbol table. These files simplify the addition of keywords to the symboltable/stringpool. They have yet to be implemented, currently just a framework.
+------------------------------------------------------------------------
+r552 | boswald | 2014-11-06 21:22:14 -0600 (Thu, 06 Nov 2014) | 2 lines
+
+added symbol_add to symbol table, to be used for initialization of keywords
+
+------------------------------------------------------------------------
+r551 | twoody | 2014-11-06 19:27:47 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Changes to le.c; 1. methods for lex_adv to call instead of gigantic lex_adv; 2. flopLex made to switch curLex with nextLex; 3. column and line declared to be played with; 4.no more ungetc, next_ch instead; 5. something is broken now, so I'll be degugging from now
+------------------------------------------------------------------------
+r550 | twoody | 2014-11-06 14:46:31 -0600 (Thu, 06 Nov 2014) | 1 line
+
+While calling ungetc, we were not reverting back the value of , which was leading to a few errors while running test4.
+------------------------------------------------------------------------
+r549 | twoody | 2014-11-06 13:25:44 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Messing around with a new test file that just iterates through punct; Has very weird behavior
+------------------------------------------------------------------------
+r548 | twoody | 2014-11-06 12:58:31 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Finished indentation fixing and going to read some more lex.c
+------------------------------------------------------------------------
+r547 | twoody | 2014-11-06 12:41:06 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Accidenteally deleted a ';'we needed to run lex.c; fixed this so we can run testlex again
+------------------------------------------------------------------------
+r546 | twoody | 2014-11-06 12:14:51 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Still reading through lex.c; fixing up indentations and small things as I go
+------------------------------------------------------------------------
+r543 | twoody | 2014-11-06 00:41:20 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Just a few comment changes like we talked about in class while reading through lex.c; Nothing major, but have to go to bed
+------------------------------------------------------------------------
+r542 | twoody | 2014-11-06 00:19:45 -0600 (Thu, 06 Nov 2014) | 1 line
+
+Committing my changes before loss of internet connection; changes include trimming some fat from lex.c and fixing indentations in lex.c
+------------------------------------------------------------------------
+r541 | twoody | 2014-11-05 23:51:04 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Made Makefile and runTest print in a more readable fashion. Also, blocked out the print statements in lexical.c that were put in put_lex()
+------------------------------------------------------------------------
+r540 | cbierman | 2014-11-05 23:19:14 -0600 (Wed, 05 Nov 2014) | 1 line
+
+added nextchar to end of punct so we're not stuck on punct
+------------------------------------------------------------------------
+r539 | twoody | 2014-11-05 23:14:58 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Weird stuff is going on with everything in lex, BUT the punct chart IS CORRECT! I can promise that.
+------------------------------------------------------------------------
+r538 | cbierman | 2014-11-05 23:01:58 -0600 (Wed, 05 Nov 2014) | 1 line
+
+fixed syntax error
+------------------------------------------------------------------------
+r537 | twoody | 2014-11-05 22:59:04 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Got rid of some errors, final debugging done on Cale's name
+------------------------------------------------------------------------
+r536 | twoody | 2014-11-05 22:30:16 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Finished the punctuation IDEA, now, we need debuggin
+------------------------------------------------------------------------
+r534 | twoody | 2014-11-05 21:14:42 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Final steps of organization... for now!
+------------------------------------------------------------------------
+r533 | cbierman | 2014-11-05 20:46:24 -0600 (Wed, 05 Nov 2014) | 1 line
+
+added printing for lex_put debugging
+------------------------------------------------------------------------
+r532 | twoody | 2014-11-05 20:40:24 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Made a better Makefile! If any changes need to be made to it, just let me know!
+------------------------------------------------------------------------
+r531 | boswald | 2014-11-05 19:58:46 -0600 (Wed, 05 Nov 2014) | 1 line
+
+fixed formatting so that I can copy enum from .c to .h
+------------------------------------------------------------------------
+r530 | cbierman | 2014-11-05 19:43:39 -0600 (Wed, 05 Nov 2014) | 1 line
+
+changed punct_type to an enum for indexing purposes
+------------------------------------------------------------------------
+r529 | cbierman | 2014-11-05 19:39:45 -0600 (Wed, 05 Nov 2014) | 1 line
+
+added Makefile to src
+------------------------------------------------------------------------
+r528 | twoody | 2014-11-05 19:28:54 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Almost there...
+------------------------------------------------------------------------
+r527 | twoody | 2014-11-05 19:27:53 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Keeping at it!
+------------------------------------------------------------------------
+r526 | twoody | 2014-11-05 19:26:11 -0600 (Wed, 05 Nov 2014) | 1 line
+
+More organizationcd five/
+------------------------------------------------------------------------
+r525 | twoody | 2014-11-05 19:09:38 -0600 (Wed, 05 Nov 2014) | 1 line
+
+More organization!
+------------------------------------------------------------------------
+r524 | twoody | 2014-11-05 19:01:52 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Should be back on track with repo!
+------------------------------------------------------------------------
+r523 | twoody | 2014-11-05 18:56:38 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Weird svn errors, Should be solved now
+------------------------------------------------------------------------
+r522 | boswald | 2014-11-05 18:49:42 -0600 (Wed, 05 Nov 2014) | 1 line
+
+
+------------------------------------------------------------------------
+r521 | twoody | 2014-11-05 18:43:14 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Cleaned up the lex directory so we are in just src now. Will change Makefile next
+------------------------------------------------------------------------
+r520 | twoody | 2014-11-05 18:37:37 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Making a src direct. and obj. direct. for when we Makefile and test stuffz. Just organization
+------------------------------------------------------------------------
+r519 | boswald | 2014-11-05 18:33:38 -0600 (Wed, 05 Nov 2014) | 1 line
+
+fixed error with character checking in ident
+------------------------------------------------------------------------
+r518 | boswald | 2014-11-05 18:26:17 -0600 (Wed, 05 Nov 2014) | 1 line
+
+added test2 file for additional documentation on our current bugs in lexical.
+------------------------------------------------------------------------
+r517 | twoody | 2014-11-05 18:11:23 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Made documentation in test1 of the findings regarding comments poooopping up as identifiers
+------------------------------------------------------------------------
+r516 | twoody | 2014-11-05 18:05:42 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Proved a theory just now with test1 that shows that every comment shows up as an identifier in our thing. This could also be whitespace, so more tests will have to be done
+------------------------------------------------------------------------
+r515 | boswald | 2014-11-05 17:43:36 -0600 (Wed, 05 Nov 2014) | 1 line
+
+punctuation lexeme no longer causes an infinite loop
+------------------------------------------------------------------------
+r514 | boswald | 2014-11-05 17:28:59 -0600 (Wed, 05 Nov 2014) | 1 line
+
+fixed comments and removed a duplicate declaration
+------------------------------------------------------------------------
+r512 | twoody | 2014-11-05 13:08:33 -0600 (Wed, 05 Nov 2014) | 1 line
+
+Wasn't sure if test1 was in svn repo; if it is, a comment in test1 will show where the error is occurring.
+------------------------------------------------------------------------
+r505 | twoody | 2014-11-04 14:27:41 -0600 (Tue, 04 Nov 2014) | 1 line
+
+a little addition to test1 in test_stuff; Makefile should be working now, too so that we can delete testlex whenever we want
+------------------------------------------------------------------------
+r504 | cbierman | 2014-11-04 14:20:28 -0600 (Tue, 04 Nov 2014) | 1 line
+
+fixed stringpool in Makfile
+------------------------------------------------------------------------
+r503 | twoody | 2014-11-04 00:20:12 -0600 (Tue, 04 Nov 2014) | 1 line
+
+Made a test case, and EOF problem is not the case, as much as PUNCT seems to be the problem (as seen in facebook photo).
+------------------------------------------------------------------------
+r502 | twoody | 2014-11-04 00:17:42 -0600 (Tue, 04 Nov 2014) | 1 line
+
+New directory test_stuff that has the working executable of testlex. Going to create a few things to see what it does, BUT IM PRETTY SURE THERE IS AN EOF PPROBLEM!
+------------------------------------------------------------------------
+r501 | twoody | 2014-11-03 22:26:35 -0600 (Mon, 03 Nov 2014) | 1 line
+
+I managed to make an executable 'testlex'; Now, we should run some tests on it to see if it is doing what we want it to do!
+------------------------------------------------------------------------
+r500 | twoody | 2014-11-03 21:29:25 -0600 (Mon, 03 Nov 2014) | 1 line
+
+More dubugging, this time in symboltable.c: No declerations inside of for loops!
+------------------------------------------------------------------------
+r499 | twoody | 2014-11-03 21:22:12 -0600 (Mon, 03 Nov 2014) | 1 line
+
+In stringpool, it's 'FILE' and not 'File' :p 
+------------------------------------------------------------------------
+r498 | twoody | 2014-11-03 20:30:05 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Got rid of a double main while 'make testlex'ing
+------------------------------------------------------------------------
+r497 | twoody | 2014-11-03 14:53:52 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Finished my message and outline in parser.c for what should be dealt with inside of parser.
+------------------------------------------------------------------------
+r496 | twoody | 2014-11-03 14:22:13 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Ran out of time, just made a general comment in parser for what is needed next
+------------------------------------------------------------------------
+r495 | twoody | 2014-11-03 14:13:11 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Added the parse_loop to parser. This should be continued in depth. Keywords missing are TRY and RAISE.
+------------------------------------------------------------------------
+r494 | twoody | 2014-11-03 13:58:54 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Added a bit more to parser(parse_statement specifically), and just checking in since its been half an hour
+------------------------------------------------------------------------
+r493 | twoody | 2014-11-03 13:40:20 -0600 (Mon, 03 Nov 2014) | 1 line
+
+Added a BUG to parser showing that we need to call lexical through the right directories. Main reason for commit is because I forgot to update
+------------------------------------------------------------------------
+r490 | twoody | 2014-11-02 23:51:23 -0600 (Sun, 02 Nov 2014) | 1 line
+
+Added a punct table to lex.c
+------------------------------------------------------------------------
+r483 | twoody | 2014-10-31 14:05:49 -0500 (Fri, 31 Oct 2014) | 1 line
+
+Fixed some errors while flipping through versions. BE SURE TO SAVE THE PREVIOUS DOCUMENT BEFORE MERGING TO A PREVIOUS EDITION IN ANYWAYsvn add lexical.csvn add lexical.csvn add lexical.csvn add lexical.csvn add lexical.csvn add lexical.c If I hadn't, we would have lost all of Bryan's changes. If this is confusing, please talk to me about it :) 
+------------------------------------------------------------------------
+r482 | twoody | 2014-10-31 13:56:40 -0500 (Fri, 31 Oct 2014) | 1 line
+
+Revisited the old rendition of lex.c to make a copy of this old lex.c after Bryans change to see what was changed verbatim in lex.c's extended numbers
+------------------------------------------------------------------------
+r481 | boswald | 2014-10-31 13:19:21 -0500 (Fri, 31 Oct 2014) | 1 line
+
+massively improved readability of lexical.c. Fixed some errors in lex_advance. Added comments to make whole thing more readable.
+------------------------------------------------------------------------
+r433 | boswald | 2014-10-23 12:39:57 -0500 (Thu, 23 Oct 2014) | 1 line
+
+had some things missing that I thought I fixed yesterday. Readded.
+------------------------------------------------------------------------
+r418 | boswald | 2014-10-23 01:04:44 -0500 (Thu, 23 Oct 2014) | 1 line
+
+we're up to linker errors now. Got everything else fixed.
+------------------------------------------------------------------------
+r413 | boswald | 2014-10-23 00:38:04 -0500 (Thu, 23 Oct 2014) | 1 line
+
+added stringpool.c and fixed Makefile to use it
+------------------------------------------------------------------------
+r412 | boswald | 2014-10-22 23:59:25 -0500 (Wed, 22 Oct 2014) | 2 lines
+
+added header guard to errors.h to avoid repeated declarations */
+
+------------------------------------------------------------------------
+r411 | boswald | 2014-10-22 20:11:03 -0500 (Wed, 22 Oct 2014) | 1 line
+
+got rid of all reported errors. Now we have to fix errors.h
+------------------------------------------------------------------------
+r410 | boswald | 2014-10-22 19:53:54 -0500 (Wed, 22 Oct 2014) | 1 line
+
+fixed some errors, almost able to compile testlex... still working
+------------------------------------------------------------------------
+r399 | nabecker | 2014-10-20 20:21:16 -0500 (Mon, 20 Oct 2014) | 2 lines
+
+trying to help
+
+------------------------------------------------------------------------
+r378 | twoody | 2014-10-15 14:17:09 -0500 (Wed, 15 Oct 2014) | 1 line
+
+More comments in lexical.c regarding EOL and strings PLUS description of string literal of single quote added
+------------------------------------------------------------------------
+r376 | twoody | 2014-10-15 03:53:56 -0500 (Wed, 15 Oct 2014) | 1 line
+
+Added implementation of ungetc(ch, file_stream) for comments in lexical, some more comments, noted a potential error in STRINGS entry-if-statment, and a few other things. Mainly fell asleep on the keyboard
+------------------------------------------------------------------------
+r375 | cbierman | 2014-10-15 00:00:01 -0500 (Wed, 15 Oct 2014) | 1 line
+
+added some comments to clarify what the previous code did
+------------------------------------------------------------------------
+r373 | twoody | 2014-10-14 23:21:25 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Lexical.c: Radix values have been corrected s.t. 'a'=10 + some comment changes
+------------------------------------------------------------------------
+r371 | boswald | 2014-10-14 22:16:18 -0500 (Tue, 14 Oct 2014) | 2 lines
+
+deleted parser.c duplicate from the lexical folder. Actually told svn about it this time so it will stop being restored.
+
+------------------------------------------------------------------------
+r369 | boswald | 2014-10-14 22:06:57 -0500 (Tue, 14 Oct 2014) | 2 lines
+
+Added an error message for our current comment handling. I think we need to change the way we deal with comments, because the - needs to be treated as a punc mark on its own, not only when there are two in a row. Not sure how to deal with comments yet though.
+
+------------------------------------------------------------------------
+r367 | cbierman | 2014-10-14 19:02:30 -0500 (Tue, 14 Oct 2014) | 1 line
+
+fixed syntax errors present in errors, lexical, stringpool, and symboltable
+------------------------------------------------------------------------
+r366 | cbierman | 2014-10-14 18:21:41 -0500 (Tue, 14 Oct 2014) | 1 line
+
+changed use of isalpha and isdigit to ISCLASS, added error messages for new errors
+------------------------------------------------------------------------
+r365 | boswald | 2014-10-14 17:47:04 -0500 (Tue, 14 Oct 2014) | 1 line
+
+maintenence. added errors. added tentative support for punct and eof, which I think needs to be modified.
+------------------------------------------------------------------------
+r363 | boswald | 2014-10-14 16:51:01 -0500 (Tue, 14 Oct 2014) | 1 line
+
+added parser file for real this time
+------------------------------------------------------------------------
+r362 | twoody | 2014-10-14 15:41:38 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Provided a little more detail and a BUG. Also, look for 'WHY THESE MATHZ'. I think we need to use pow
+------------------------------------------------------------------------
+r361 | twoody | 2014-10-14 15:35:46 -0500 (Tue, 14 Oct 2014) | 1 line
+
+All of the alpha cases are taken care of in extended. More work needed tho
+------------------------------------------------------------------------
+r360 | cbierman | 2014-10-14 15:25:59 -0500 (Tue, 14 Oct 2014) | 1 line
+
+added gtools to repo
+------------------------------------------------------------------------
+r359 | cbierman | 2014-10-14 14:53:38 -0500 (Tue, 14 Oct 2014) | 1 line
+
+added character class checking to lexical
+------------------------------------------------------------------------
+r358 | twoody | 2014-10-14 14:51:55 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Committing to Cale, and Cale only 2 ;)
+------------------------------------------------------------------------
+r357 | twoody | 2014-10-14 14:38:41 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Committing to Cale, and Cale only ;)
+------------------------------------------------------------------------
+r356 | twoody | 2014-10-14 13:01:18 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Added two error messages to error.h PLUS more changes to lexical.c
+------------------------------------------------------------------------
+r355 | twoody | 2014-10-14 12:51:59 -0500 (Tue, 14 Oct 2014) | 1 line
+
+More format changes to easily spot any changes
+------------------------------------------------------------------------
+r354 | twoody | 2014-10-14 12:36:46 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Minor changes still in lexical.h PLUS adding a little bit of a different formatting to easier spot new changes
+------------------------------------------------------------------------
+r352 | twoody | 2014-10-14 10:32:24 -0500 (Tue, 14 Oct 2014) | 1 line
+
+More and more comments to lexical.c
+------------------------------------------------------------------------
+r351 | twoody | 2014-10-14 10:08:58 -0500 (Tue, 14 Oct 2014) | 1 line
+
+Some more comments in lexical...
+------------------------------------------------------------------------
+r350 | twoody | 2014-10-14 00:46:32 -0500 (Tue, 14 Oct 2014) | 1 line
+
+More comments
+------------------------------------------------------------------------
+r349 | twoody | 2014-10-14 00:31:07 -0500 (Tue, 14 Oct 2014) | 1 line
+
+More questions in lexical and more comments; potential error with nextchar() placement in digits
+------------------------------------------------------------------------
+r348 | twoody | 2014-10-13 23:53:25 -0500 (Mon, 13 Oct 2014) | 1 line
+
+added a couple of comments about LEX_MAX
+------------------------------------------------------------------------
+r347 | twoody | 2014-10-13 23:34:28 -0500 (Mon, 13 Oct 2014) | 1 line
+
+Did some indentations and posted a question on lexadvance that I will answer later
+------------------------------------------------------------------------
+r345 | cbierman | 2014-10-13 19:39:55 -0500 (Mon, 13 Oct 2014) | 1 line
+
+added logic for cosuming character strings with the help of Brian Oswold
+------------------------------------------------------------------------
+r344 | cbierman | 2014-10-13 18:21:04 -0500 (Mon, 13 Oct 2014) | 1 line
+
+added skeleton of string analysis
+------------------------------------------------------------------------
+r343 | boswald | 2014-10-13 18:03:17 -0500 (Mon, 13 Oct 2014) | 1 line
+
+fixed indentation again
+------------------------------------------------------------------------
+r342 | boswald | 2014-10-13 17:57:12 -0500 (Mon, 13 Oct 2014) | 1 line
+
+fixed indentation
+------------------------------------------------------------------------
+r335 | boswald | 2014-10-13 12:40:05 -0500 (Mon, 13 Oct 2014) | 1 line
+
+updated README to include contents of lexical
+------------------------------------------------------------------------
+r237 | cbierman | 2014-09-30 23:11:28 -0500 (Tue, 30 Sep 2014) | 1 line
+
+noted BUG in extended number recognition
+------------------------------------------------------------------------
+r235 | cbierman | 2014-09-30 22:59:39 -0500 (Tue, 30 Sep 2014) | 2 lines
+
+Took a stab at extended number support in lex_advance(), added error for radix overflow
+
+------------------------------------------------------------------------
+r231 | cbierman | 2014-09-30 22:03:02 -0500 (Tue, 30 Sep 2014) | 1 line
+
+Added check for integer overflow in lex_advance()
+------------------------------------------------------------------------
+r230 | cbierman | 2014-09-30 21:21:01 -0500 (Tue, 30 Sep 2014) | 2 lines
+
+Added error for symbol table being full`
+
+------------------------------------------------------------------------
+r226 | boswald | 2014-09-30 20:08:10 -0500 (Tue, 30 Sep 2014) | 1 line
+
+finished identifier handling in lexical.c. Added string pool full error to stringpool.h
+------------------------------------------------------------------------
+r221 | xjin6 | 2014-09-30 19:01:44 -0500 (Tue, 30 Sep 2014) | 1 line
+
+error.c is working, need more info
+------------------------------------------------------------------------
+r220 | boswald | 2014-09-30 17:59:56 -0500 (Tue, 30 Sep 2014) | 1 line
+
+complete symbol_init()
+------------------------------------------------------------------------
+r211 | xjin6 | 2014-09-29 13:02:42 -0500 (Mon, 29 Sep 2014) | 1 line
+
+group log
+------------------------------------------------------------------------
+r208 | xjin6 | 2014-09-29 03:52:00 -0500 (Mon, 29 Sep 2014) | 1 line
+
+add parser to our directory
+------------------------------------------------------------------------
+r117 | twoody | 2014-09-23 18:28:37 -0500 (Tue, 23 Sep 2014) | 1 line
+
+Message7 in NEEDSDONE
+------------------------------------------------------------------------
+r116 | twoody | 2014-09-23 18:21:32 -0500 (Tue, 23 Sep 2014) | 1 line
+
+Updated README with information about DEFINITIONS
+------------------------------------------------------------------------
+r115 | twoody | 2014-09-23 18:14:02 -0500 (Tue, 23 Sep 2014) | 1 line
+
+Added DEFINITIONS. Information should be posted in README about this
+------------------------------------------------------------------------
+r114 | twoody | 2014-09-23 18:13:03 -0500 (Tue, 23 Sep 2014) | 1 line
+
+Deleted CHATLOG since NEEDSDONE can take its place
+------------------------------------------------------------------------
+r113 | nabecker | 2014-09-23 16:56:14 -0500 (Tue, 23 Sep 2014) | 2 lines
+
+adding chat log message
+
+------------------------------------------------------------------------
+r100 | twoody | 2014-09-22 11:57:18 -0500 (Mon, 22 Sep 2014) | 1 line
+
+Updated lexical.c from inclass material
+------------------------------------------------------------------------
+r92 | boswald | 2014-09-20 16:38:55 -0500 (Sat, 20 Sep 2014) | 3 lines
+
+added list of files in directory to readme
+cleaned up formating in other files (there were some missing indents, etc.)
+
+------------------------------------------------------------------------
+r79 | twoody | 2014-09-18 20:19:04 -0500 (Thu, 18 Sep 2014) | 1 line
+
+Message6 added
+------------------------------------------------------------------------
+r78 | twoody | 2014-09-18 20:17:09 -0500 (Thu, 18 Sep 2014) | 1 line
+
+Deleted seprate_these, since it has been done
+------------------------------------------------------------------------
+r76 | twoody | 2014-09-18 13:39:03 -0500 (Thu, 18 Sep 2014) | 1 line
+
+Fixed typo in MSG.5
+------------------------------------------------------------------------
+r75 | twoody | 2014-09-18 10:03:45 -0500 (Thu, 18 Sep 2014) | 1 line
+
+Message5 update
+------------------------------------------------------------------------
+r74 | twoody | 2014-09-17 22:41:27 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Message5 in NEEDSDONE
+------------------------------------------------------------------------
+r71 | xjin6 | 2014-09-17 14:51:40 -0500 (Wed, 17 Sep 2014) | 1 line
+
+group commu.
+------------------------------------------------------------------------
+r70 | xjin6 | 2014-09-17 14:47:59 -0500 (Wed, 17 Sep 2014) | 1 line
+
+group commu.
+------------------------------------------------------------------------
+r69 | twoody | 2014-09-17 14:19:40 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Added a CHATLOG
+------------------------------------------------------------------------
+r68 | twoody | 2014-09-17 13:17:15 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Gave credit to Jones on symboltable.c
+------------------------------------------------------------------------
+r67 | twoody | 2014-09-17 12:55:27 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Modified NeedsDone
+------------------------------------------------------------------------
+r66 | cbierman | 2014-09-17 12:53:35 -0500 (Wed, 17 Sep 2014) | 1 line
+
+moved files from jones for real this time
+------------------------------------------------------------------------
+r65 | cbierman | 2014-09-17 12:52:35 -0500 (Wed, 17 Sep 2014) | 1 line
+
+added starting files from jones directory
+------------------------------------------------------------------------
+r64 | twoody | 2014-09-17 12:51:21 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Removed extra copy of config.h
+------------------------------------------------------------------------
+r63 | cbierman | 2014-09-17 12:43:22 -0500 (Wed, 17 Sep 2014) | 1 line
+
+moved config into lexical directory
+------------------------------------------------------------------------
+r62 | cbierman | 2014-09-17 12:39:18 -0500 (Wed, 17 Sep 2014) | 1 line
+
+added lexical folder
+------------------------------------------------------------------------
+r61 | cbierman | 2014-09-17 12:30:53 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Seperated config.h
+------------------------------------------------------------------------
+r60 | twoody | 2014-09-17 12:23:49 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Added
+------------------------------------------------------------------------
+r59 | twoody | 2014-09-17 12:22:23 -0500 (Wed, 17 Sep 2014) | 1 line
+
+updated
+------------------------------------------------------------------------
+r57 | twoody | 2014-09-17 11:58:42 -0500 (Wed, 17 Sep 2014) | 1 line
+
+created
+------------------------------------------------------------------------
+r55 | twoody | 2014-09-17 11:48:17 -0500 (Wed, 17 Sep 2014) | 1 line
+
+Edited
+------------------------------------------------------------------------
+r38 | xjin6 | 2014-09-13 02:44:54 -0500 (Sat, 13 Sep 2014) | 1 line
+
+Adding Group README
+------------------------------------------------------------------------
+r4 | dwjones | 2014-09-05 12:09:55 -0500 (Fri, 05 Sep 2014) | 2 lines
+
+Created groups
+
+------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+#define string_init() { _string_limit = 1; }
+// initializer for the string pool package
+// initial value 1 guarantees that STRING_NULL will nott accidentally be used
+
+//string_handle string_start();
+#define string_start() ( _string_pos = _string_limit, _string_limit )
+// setup to accumulate a new string and return its handle
+
+//void string_append( char ch );
+#define string_append(ch) {                                             \
+        if (_string_pos > (POOL_SIZE - 1)) error_fatal( ER_POOLFULL, "STRINGPOOL: string_append");  \
+        _string_pool[ _string_pos ] = ch;                               \
+        _string_pos++;                                                  \
+ printf("\nTHIS IS THE CURRENT STRINPOOL POSITION:\t%d\n",_string_pos);\
+}
+
+Why not here!

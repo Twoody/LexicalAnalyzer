@@ -1,0 +1,13 @@
+STRING( 1410 "hello, this is a string" )
+STRING( 1781 "hello, this is another string" )
+STRING( 4058 "this string should still work ''''''''''''''''" )
+STRING( 1858 "this string should "work" as well" )
+STRING( 539 "\t\n\b\v\asdasdasdasd" )
+STRING( 1806 "LAJIS)*(Ua8s9uyd8au9s8u(A*U(*SUDOI)*(" )
+STRING( 1705 "one" )
+STRING( 1705 "one" )
+STRING( 2767 "two" )
+STRING( 2767 "two" )
+STRING( 3842 "three" )
+STRING( 3842 "three" )
+ENDFILE

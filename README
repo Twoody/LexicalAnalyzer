@@ -1,0 +1,39 @@
+;NEEDSDONE:
+;	A place to communicate via messages of the author, followed by
+;	some sort of information regarding an issue or the next big step.
+
+;DEFINITIONS:
+;	An alphabetical listing of all of the notes that Jones has posted
+;	online. Feel free to add to this. Taking away from this should
+;	be communicated via NEEDSDONE. 
+;	The best use of DEFINITIONS is to use the following search
+;	functionality of VI:
+;
+;		to next xxx in file 		/xxx[CR] 
+;		to previous xxx in file 	?xxx[CR] 
+;		match xpx or xqx or xrx 	/x.x[CR] 
+;		match xx or xyx or xyyyx 	/xy*x[CR] 
+;		match only xax or xbx 		/x[ab]x[CR]
+
+;LEXICAL:
+;	Contains files necessary for lexical analysis:
+;		config.h
+;		errors.h
+;		errors.c
+;		lexical.h
+;		lexical.c
+;		sets.h
+;		stringpool.h
+;		symboltable.h
+;		symboltable.c
+;		testlex.c
+;	
+
+
+;MEMBERS
+	Five -
+  		Tanner Woody		tanner-woody@uiowa.edu
+	  	Cale Bierman		cale-bierman@uiowa.edu
+	 	Bryan Oswald		bryan-oswald@uiowa.edu
+  		Xi Jin                	xi-jin@uiowa.edu
+  		William Slobodnik
