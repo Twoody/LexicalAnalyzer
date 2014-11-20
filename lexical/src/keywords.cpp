@@ -1,3 +1,0 @@
-/*
- * Restart of keywrods.cpp
- */
